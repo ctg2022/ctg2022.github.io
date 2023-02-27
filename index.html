@@ -11,7 +11,46 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js" charset="utf-8"></script>
-        <script src="" charset="utf-8"></script>
+        <!-- <script src="" charset="utf-8"></script> -->
+        <style media="screen">
+            body {
+                position: relative;
+            }
+            
+            .navbar-dark .navbar-brand {
+                color:#fff !important;
+            }
+            
+            #collapseEx2 .navbar-nav li a.active {
+                background:rgba(255,255,255,.15);
+            }
+            
+            #home .view {
+                height: 100vh;
+            }
+            
+            .full-bg-img {
+                color: #fff;
+            }
+            
+            #home p, .title{
+                font-weight:100;
+            }
+            
+            /*Fixed background*/
+            .fixed-bg {
+                background: url("https://mdbootstrap.com/images/regular/work/img%20(1).jpg") no-repeat center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                height: 55vh;
+            }
+            
+            main {
+                margin-bottom: -20px;
+            }
+        </style>
     </head>
     <body>
         <h3>Hello!!!</h3>
@@ -386,7 +425,9 @@
         <!-- /.Outro -->
         
         <script type="text/javascript">
-            
+            $('body').scrollspy({
+                target: '#collapseEx2'
+            });
         </script>
     </body>
 </html>
